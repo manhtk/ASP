@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace QuanLyGiaoVien.Page
 {
-    public partial class Seach : System.Web.UI.MasterPage
+    public partial class HomeBackEnd : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -10,7 +10,7 @@
 namespace QuanLyGiaoVien.Page {
     
     
-    public partial class FrontEnd {
+    public partial class BackEnd {
         
         /// <summary>
         /// head control.
@@ -31,30 +31,12 @@ namespace QuanLyGiaoVien.Page {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Login1 control.
+        /// main_backend control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::QuanLyGiaoVien.Page.Login Login1;
-        
-        /// <summary>
-        /// main_body control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder main_body;
-        
-        /// <summary>
-        /// Seach1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::QuanLyGiaoVien.Page.Seach Seach1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder main_backend;
     }
 }
