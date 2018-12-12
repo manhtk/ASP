@@ -1,0 +1,274 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4495CD36-29BA-46AC-9AD1-AEF4FB5AC50D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyGiaoVien</RootNamespace>
+    <AssemblyName>QuanLyGiaoVien</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Style.css" />
+    <Content Include="CSS\StyleBack.css" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Page\GiaoVienBackEnd.aspx" />
+    <Content Include="Page\GiaoVienFrontEnd.aspx" />
+    <Content Include="Page\GioiThieuFrontEnd.aspx" />
+    <Content Include="Page\HomeBackEnd.aspx" />
+    <Content Include="Page\HomeFrontEnd.aspx" />
+    <Content Include="Page\LichDayBackEnd.aspx" />
+    <Content Include="Page\LichDayFrontEnd.aspx" />
+    <Content Include="Page\LienHeFrontEnd.aspx" />
+    <Content Include="Page\Login.ascx" />
+    <Content Include="Page\LopBackEnd.aspx" />
+    <Content Include="Page\LopFrontEnd.aspx" />
+    <Content Include="Page\MonBackEnd.aspx" />
+    <Content Include="Page\MonHocFrontEnd.aspx" />
+    <Content Include="Page\Search.ascx" />
+    <Content Include="Page\TinTucFrontEnd.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSS\Style.css.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CSS\Style.css.designer.cs">
+      <DependentUpon>Style.css.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSS\StyleBack.css.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CSS\StyleBack.css.designer.cs">
+      <DependentUpon>StyleBack.css.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\BackEnd.Master.cs">
+      <DependentUpon>BackEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\BackEnd.Master.designer.cs">
+      <DependentUpon>BackEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Page\FrontEnd.Master.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\FrontEnd.Master.designer.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Page\GiaoVienBackEnd.aspx.cs">
+      <DependentUpon>GiaoVienBackEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\GiaoVienBackEnd.aspx.designer.cs">
+      <DependentUpon>GiaoVienBackEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\GiaoVienFrontEnd.aspx.cs">
+      <DependentUpon>GiaoVienFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\GiaoVienFrontEnd.aspx.designer.cs">
+      <DependentUpon>GiaoVienFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\GioiThieuFrontEnd.aspx.cs">
+      <DependentUpon>GioiThieuFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\GioiThieuFrontEnd.aspx.designer.cs">
+      <DependentUpon>GioiThieuFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\HomeBackEnd.aspx.cs">
+      <DependentUpon>HomeBackEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\HomeBackEnd.aspx.designer.cs">
+      <DependentUpon>HomeBackEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\HomeFrontEnd.aspx.cs">
+      <DependentUpon>HomeFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\HomeFrontEnd.aspx.designer.cs">
+      <DependentUpon>HomeFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\LichDayBackEnd.aspx.cs">
+      <DependentUpon>LichDayBackEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\LichDayBackEnd.aspx.designer.cs">
+      <DependentUpon>LichDayBackEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\LichDayFrontEnd.aspx.cs">
+      <DependentUpon>LichDayFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\LichDayFrontEnd.aspx.designer.cs">
+      <DependentUpon>LichDayFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\LienHeFrontEnd.aspx.cs">
+      <DependentUpon>LienHeFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\LienHeFrontEnd.aspx.designer.cs">
+      <DependentUpon>LienHeFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\LopBackEnd.aspx.cs">
+      <DependentUpon>LopBackEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\LopBackEnd.aspx.designer.cs">
+      <DependentUpon>LopBackEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\LopFrontEnd.aspx.cs">
+      <DependentUpon>LopFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\LopFrontEnd.aspx.designer.cs">
+      <DependentUpon>LopFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\MonBackEnd.aspx.cs">
+      <DependentUpon>MonBackEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\MonBackEnd.aspx.designer.cs">
+      <DependentUpon>MonBackEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\MonHocFrontEnd.aspx.cs">
+      <DependentUpon>MonHocFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\MonHocFrontEnd.aspx.designer.cs">
+      <DependentUpon>MonHocFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TinTucFrontEnd.aspx.cs">
+      <DependentUpon>TinTucFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\TinTucFrontEnd.aspx.designer.cs">
+      <DependentUpon>TinTucFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Page\FrontEnd.Master" />
+    <Content Include="Page\BackEnd.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49470</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49470/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
