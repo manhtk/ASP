@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>d372803b-1ed5-4dce-8832-3d4e24b20a67</ProjectGuid>
+    <ProjectGuid>b567561d-7d9e-4f83-bdd9-888e93adfac8</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BUS</RootNamespace>
-    <AssemblyName>BUS</AssemblyName>
+    <RootNamespace>DALs</RootNamespace>
+    <AssemblyName>DALs</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
