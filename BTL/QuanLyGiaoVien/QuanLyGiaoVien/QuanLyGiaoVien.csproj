@@ -70,6 +70,10 @@
     <Content Include="CSS\Style.css" />
     <Content Include="CSS\StyleBack.css" />
     <Content Include="Images\banner.jpg" />
+    <Content Include="Images\trangchu1.JPG" />
+    <Content Include="Images\trangchu2.jpg" />
+    <Content Include="Images\trangchu3.JPG" />
+    <Content Include="Images\trangchu4.JPG" />
     <Content Include="Page\GiaoVienBackEnd.aspx" />
     <Content Include="Page\GiaoVienFrontEnd.aspx" />
     <Content Include="Page\GioiThieuFrontEnd.aspx" />
