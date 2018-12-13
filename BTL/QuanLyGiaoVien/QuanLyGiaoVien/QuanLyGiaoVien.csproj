@@ -90,6 +90,7 @@
     <Content Include="Page\MonBackEnd.aspx" />
     <Content Include="Page\MonHocFrontEnd.aspx" />
     <Content Include="Page\Search.ascx" />
+    <Content Include="Page\TinTucBackEnd.aspx" />
     <Content Include="Page\TinTucFrontEnd.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -224,6 +225,13 @@
     </Compile>
     <Compile Include="Page\Search.ascx.designer.cs">
       <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TinTucBackEnd.aspx.cs">
+      <DependentUpon>TinTucBackEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\TinTucBackEnd.aspx.designer.cs">
+      <DependentUpon>TinTucBackEnd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page\TinTucFrontEnd.aspx.cs">
       <DependentUpon>TinTucFrontEnd.aspx</DependentUpon>
