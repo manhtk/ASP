@@ -25,6 +25,7 @@
                     <li><a href="GiaoVienBackEnd.aspx">Quản Lý Giáo Viên</a></li>
                      <li><a href="MonBackEnd.aspx">Quản Lý Môn Học</a></li>
                      <li><a href="LopBackEnd.aspx">Quản Lý Lớp</a></li>
+                     <li><a href="TinTucBackEnd.aspx">Quản Lý Tin Tức</a></li>
                      <li><a href="LichDayBackEnd.aspx">Phân Công Giảng Dạy</a></li>
                     <li><a href="HomeFrontEnd.aspx"> Đăng Xuất</a></li>
                 </ul>

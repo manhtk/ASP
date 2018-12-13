@@ -34,7 +34,13 @@
                 <ul>
                     <li><a href="HomeFrontEnd.aspx">Trang Chủ</a></li>
                      <li><a href="TinTucFrontEnd.aspx">Tin Tức</a></li>
-                     <li><a href="GioiThieuFrontEnd.aspx">Giới Thiệu</a></li>
+                     <li>
+                         <a href="GioiThieuFrontEnd.aspx">Giới Thiệu</a>
+                    <%--<ul id="sub-menu">
+                             <li><a href="#">Trường ĐHCN</a></li>
+                             <li><a href="#">Khoa CNTT</a></li>
+                         </ul>--%>
+                     </li>
                      <li><a href="LienHeFrontEnd.aspx">Liên Hệ</a></li>
                 </ul>
             </div><%--End menung --%>
