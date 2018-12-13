@@ -70,6 +70,7 @@
     <Content Include="CSS\Style.css" />
     <Content Include="CSS\StyleBack.css" />
     <Content Include="Images\banner.jpg" />
+    <Content Include="Images\gioithieutruong.jpg" />
     <Content Include="Images\trangchu1.JPG" />
     <Content Include="Images\trangchu2.jpg" />
     <Content Include="Images\trangchu3.JPG" />
@@ -77,6 +78,7 @@
     <Content Include="Page\GiaoVienBackEnd.aspx" />
     <Content Include="Page\GiaoVienFrontEnd.aspx" />
     <Content Include="Page\GioiThieuFrontEnd.aspx" />
+    <Content Include="Page\GioiThieuTruongFrontEnd.aspx" />
     <Content Include="Page\HomeBackEnd.aspx" />
     <Content Include="Page\HomeFrontEnd.aspx" />
     <Content Include="Page\LichDayBackEnd.aspx" />
@@ -138,6 +140,13 @@
     </Compile>
     <Compile Include="Page\GioiThieuFrontEnd.aspx.designer.cs">
       <DependentUpon>GioiThieuFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\GioiThieuTruongFrontEnd.aspx.cs">
+      <DependentUpon>GioiThieuTruongFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\GioiThieuTruongFrontEnd.aspx.designer.cs">
+      <DependentUpon>GioiThieuTruongFrontEnd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page\HomeBackEnd.aspx.cs">
       <DependentUpon>HomeBackEnd.aspx</DependentUpon>
