@@ -334,3 +334,9 @@ C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyG
 C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.csproj.CopyComplete
 C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.dll
 C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\obj\Debug\QuanLyGiaoVien.pdb
+C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\bin\BUS.dll
+C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\bin\DALs.dll
+C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\bin\DTOs.dll
+C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\bin\BUS.pdb
+C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\bin\DALs.pdb
+C:\Users\Adminis\Desktop\ASP\BTL\QuanLyGiaoVien\QuanLyGiaoVien\bin\DTOs.pdb

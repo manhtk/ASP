@@ -9,6 +9,7 @@ namespace DTOs
     public class PhanCongDTO
     {
         public string MaPhanCong { get; set; }
+        public string MaLop { get; set; }
         public string MaMon { get; set; }
         public string MaGiaoVien { get; set; }
         public string Ngay { get; set; }
@@ -19,9 +20,10 @@ namespace DTOs
 
         }
 
-        public PhanCongDTO(string maPhanCong, string maMon, string maGiaoVien, string ngay, string tietHoc, string phongHoc)
+        public PhanCongDTO(string maPhanCong,string maLop, string maMon, string maGiaoVien, string ngay, string tietHoc, string phongHoc)
         {
             MaPhanCong = maPhanCong;
+            MaLop = maLop;
             MaMon = maMon;
             MaGiaoVien = maGiaoVien;
             Ngay = ngay;
