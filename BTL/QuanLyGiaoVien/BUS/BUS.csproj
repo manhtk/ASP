@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="PhanCongBUS.cs" />
+    <Compile Include="BackEnd\PhanCongBUS.cs" />
+    <Compile Include="FrontEnd\DsGiaoVienFrontEnd.cs" />
+    <Compile Include="FrontEnd\DsLopFrontEnd.cs" />
+    <Compile Include="FrontEnd\DsMonHocFrontEnd.cs" />
+    <Compile Include="FrontEnd\LichGiangDayFrontEnd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,5 +58,6 @@
       <Name>DTOs</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

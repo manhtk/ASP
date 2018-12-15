@@ -15,6 +15,7 @@ namespace QuanLyGiaoVien.Page
     {
         PhanCongDTO P = new PhanCongDTO();
         PhanCongBUS PhanCong = new PhanCongBUS();
+        
         public void HienThi()
         {
             dtgPhanCong.DataSource = PhanCong.ShowPhanCong();

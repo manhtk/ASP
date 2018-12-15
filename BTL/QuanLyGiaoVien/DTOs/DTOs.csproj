@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="GiaoVienDTO.cs" />
     <Compile Include="LopDTO.cs" />
-    <Compile Include="MonHoc.cs" />
+    <Compile Include="MonHocDTO.cs" />
     <Compile Include="PhanCongDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TinTucDTO.cs" />
