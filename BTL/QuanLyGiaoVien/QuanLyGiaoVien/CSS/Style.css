@@ -89,7 +89,7 @@ body {
     width: 530px;
     padding: 10px; /* thêm vào khoảng không trên, dưới, trái, phải*/
     min-height: 600px;
-    border: 1px solid #999;
+    border: 1px solid white #999;
 }
 #right {
     float: right;

@@ -2,11 +2,6 @@
 
 <%@ Register src="Login.ascx" tagname="Login" tagprefix="uc1" %>
 
-
-
-
-
-
 <%@ Register src="Search.ascx" tagname="Search" tagprefix="uc2" %>
 
 

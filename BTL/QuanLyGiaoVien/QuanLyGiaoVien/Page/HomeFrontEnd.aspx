@@ -7,7 +7,7 @@
                 <img src="../Images/trangchu1.JPG" width="200" height="auto"  />
             </td>
             <td>
-               <a href="Home1FrontEnd.aspx"><p style="padding-left:10px; font-weight:bold; text-decoration:none">SINH VIÊN KHOA CÔNG NGHỆ THÔNG TIN ĐẠT HỌC BỔNG TÀI NĂNG SAMSUNG NĂM 2018</p></a><br />
+               <a href="Home1FrontEnd.aspx" style=" text-decoration:none"><p style="padding-left:10px; font-weight:bold">SINH VIÊN KHOA CÔNG NGHỆ THÔNG TIN ĐẠT HỌC BỔNG TÀI NĂNG SAMSUNG NĂM 2018</p></a><br />
                 <p style="padding-left:10px;">KẾ HOẠCH TRIỂN KHAI THỰC TẬP TỐT NGHIỆP VÀ GIỚI THIỆU CHƯƠNG TRÌNH THỰC TẬP TẠI CÁC DOANH NGHIỆP CHO SINH VIÊN ĐH-K10.Mục đích và ý nghĩa Giúp sinh viên có định hướng lựa chọn các đề tài...</p>
             </td>
         </tr>
@@ -16,20 +16,21 @@
                 <img src="../Images/trangchu2.JPG" width="200" height="auto"  />
             </td>
             <td >
-               <a href="Home2FrontEnd.aspx"><p style="padding-left:10px; font-weight:bold; text-decoration:none">SINH VIÊN KHOA CÔNG NGHỆ THÔNG TIN ĐẠT GIẢI TẠI KỲ THI OLP TIN HỌC SINH VIÊN VIỆT NAM LẦN THỨ 27.</p></a><br />
+               <a href="Home2FrontEnd.aspx" style=" text-decoration:none"><p style="padding-left:10px; font-weight:bold; text-decoration:none">SINH VIÊN KHOA CÔNG NGHỆ THÔNG TIN ĐẠT GIẢI TẠI KỲ THI OLP TIN HỌC SINH VIÊN VIỆT NAM LẦN THỨ 27.</p></a><br />
+                <p style="padding-left:10px">Trong nhiều năm qua, có thể nói rằng Khoa Công nghệ thông tin Trường Đại học Công nghiệp Hà Nội là đơn vị tiêu biểu thành công trong việc xây dựng hướng đào tạo gắn liền với doanh nghiệp...</p>
             </td>
         </tr>
         <tr>
             <td> <img src="../Images/trangchu3.JPG" width="200" height="auto"  /></td>
             <td>
-                 <a href="Home3FrontEnd.aspx"><p style="padding-left:10px; font-weight:bold; text-decoration:none">TUYỂN DỤNG THỰC TẬP TỐT NGHIỆP TẠI CÁC DOANH NGHIỆP</p></a><br />
+                 <a href="Home3FrontEnd.aspx" style=" text-decoration:none"><p style="padding-left:10px; font-weight:bold; text-decoration:none">TUYỂN DỤNG THỰC TẬP TỐT NGHIỆP TẠI CÁC DOANH NGHIỆP</p></a><br />
                 <p style="padding-left:10px;">KHOA CÔNG NGHỆ THÔNG TIN – ĐH CÔNG NGHIỆP HÀ NỘI MỘT ĐỊA CHỈ ĐÀO TẠO NHÂN LỰC CNTT ĐƯỢC DOANH NGHIỆP TIN CẬY Đào tạo gắn liền với thực tiễn chính là chìa khóa nâng cao chất lượng nguồn nhân lực CNTT. Khoa CNTT...</p>
             </td>
         </tr>
         <tr>
            <td> <img src="../Images/trangchu4.JPG" width="200" height="auto"  /></td>
             <td>
-                 <a href="Home4FrontEnd.aspx"><p style="padding-left:10px; font-weight:bold; text-decoration:none">TUYỂN DỤNG THỰC TẬP TỐT NGHIỆP TẠI CÁC DOANH NGHIỆP</p></a><br />
+                 <a href="Home4FrontEnd.aspx" style=" text-decoration:none"><p style="padding-left:10px; font-weight:bold; text-decoration:none">TUYỂN DỤNG THỰC TẬP TỐT NGHIỆP TẠI CÁC DOANH NGHIỆP</p></a><br />
                 <p style="padding-left:10px;">KHOA CÔNG NGHỆ THÔNG TIN – ĐH CÔNG NGHIỆP HÀ NỘI MỘT ĐỊA CHỈ ĐÀO TẠO NHÂN LỰC CNTT ĐƯỢC DOANH NGHIỆP TIN CẬY Đào tạo gắn liền với thực tiễn chính là chìa khóa nâng cao chất lượng nguồn nhân lực CNTT. Khoa CNTT...</p>
             </td>
         </tr>
