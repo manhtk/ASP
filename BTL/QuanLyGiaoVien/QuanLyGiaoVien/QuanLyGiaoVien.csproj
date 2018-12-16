@@ -73,12 +73,19 @@
     <Content Include="Images\gioithieutruong.jpg" />
     <Content Include="Images\trangchu1.JPG" />
     <Content Include="Images\trangchu2.jpg" />
+    <Content Include="Images\trangchu3.1.JPG" />
+    <Content Include="Images\trangchu3.2.JPG" />
+    <Content Include="Images\trangchu3.3.JPG" />
     <Content Include="Images\trangchu3.JPG" />
     <Content Include="Images\trangchu4.JPG" />
     <Content Include="Page\GiaoVienBackEnd.aspx" />
     <Content Include="Page\GiaoVienFrontEnd.aspx" />
     <Content Include="Page\GioiThieuFrontEnd.aspx" />
     <Content Include="Page\GioiThieuTruongFrontEnd.aspx" />
+    <Content Include="Page\Home1FrontEnd.aspx" />
+    <Content Include="Page\Home2FrontEnd.aspx" />
+    <Content Include="Page\Home3FrontEnd.aspx" />
+    <Content Include="Page\Home4FrontEnd.aspx" />
     <Content Include="Page\HomeBackEnd.aspx" />
     <Content Include="Page\HomeFrontEnd.aspx" />
     <Content Include="Page\LichDayBackEnd.aspx" />
@@ -148,6 +155,34 @@
     </Compile>
     <Compile Include="Page\GioiThieuTruongFrontEnd.aspx.designer.cs">
       <DependentUpon>GioiThieuTruongFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Home1FrontEnd.aspx.cs">
+      <DependentUpon>Home1FrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Home1FrontEnd.aspx.designer.cs">
+      <DependentUpon>Home1FrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Home2FrontEnd.aspx.cs">
+      <DependentUpon>Home2FrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Home2FrontEnd.aspx.designer.cs">
+      <DependentUpon>Home2FrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Home3FrontEnd.aspx.cs">
+      <DependentUpon>Home3FrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Home3FrontEnd.aspx.designer.cs">
+      <DependentUpon>Home3FrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Home4FrontEnd.aspx.cs">
+      <DependentUpon>Home4FrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Home4FrontEnd.aspx.designer.cs">
+      <DependentUpon>Home4FrontEnd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page\HomeBackEnd.aspx.cs">
       <DependentUpon>HomeBackEnd.aspx</DependentUpon>
