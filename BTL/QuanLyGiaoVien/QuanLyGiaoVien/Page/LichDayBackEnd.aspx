@@ -12,7 +12,7 @@
         <tr>
             <td>Tên Lớp</td>
             <td>
-                <asp:DropDownList ID="DropTenlop" runat="server" Height="16px" Width="123px" DataSourceID="SqlDataSource1" DataTextField="TenLop" DataValueField="MaLop">
+                <asp:DropDownList ID="DropTenlop" runat="server" Height="16px" Width="175px" DataSourceID="SqlDataSource1" DataTextField="TenLop" DataValueField="MaLop">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QuanLyGiaoVienConnectionString7 %>" SelectCommand="SELECT * FROM [Lop]"></asp:SqlDataSource>
             </td>
@@ -20,7 +20,7 @@
         <tr>
             <td>Tên Môn</td>
             <td>
-                <asp:DropDownList ID="DropTenMon" runat="server" Height="16px" Width="123px" DataSourceID="SqlDataSource2" DataTextField="TenMon" DataValueField="MaMon">
+                <asp:DropDownList ID="DropTenMon" runat="server" Height="16px" Width="175px" DataSourceID="SqlDataSource2" DataTextField="TenMon" DataValueField="MaMon">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:QuanLyGiaoVienConnectionString8 %>" SelectCommand="SELECT * FROM [MonHoc]"></asp:SqlDataSource>
             </td>
@@ -28,7 +28,7 @@
         <tr>
             <td>Tên Giáo Viên</td>
             <td>
-                <asp:DropDownList ID="DropTenGV" runat="server" Height="16px" Width="123px" DataSourceID="SqlDataSource3" DataTextField="TenGiaoVien" DataValueField="MaGiaoVien">
+                <asp:DropDownList ID="DropTenGV" runat="server" Height="16px" Width="175px" DataSourceID="SqlDataSource3" DataTextField="TenGiaoVien" DataValueField="MaGiaoVien">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:QuanLyGiaoVienConnectionString9 %>" SelectCommand="SELECT * FROM [GiaoVien]"></asp:SqlDataSource>
             </td>
