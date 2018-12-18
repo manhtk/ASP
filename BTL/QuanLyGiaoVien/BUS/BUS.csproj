@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackEnd\GiaoVienBUS.cs" />
+    <Compile Include="BackEnd\LopBUS.cs" />
+    <Compile Include="BackEnd\MonHocBUS.cs" />
     <Compile Include="BackEnd\PhanCongBUS.cs" />
     <Compile Include="FrontEnd\DsGiaoVienFrontEnd.cs" />
     <Compile Include="FrontEnd\DsLopFrontEnd.cs" />

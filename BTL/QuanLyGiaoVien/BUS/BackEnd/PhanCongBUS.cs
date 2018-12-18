@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DTOs;
 using DALs;
-using System.Data.SqlClient;
+using DTOs;
 using System.Data;
-namespace BUS
+using System.Data.SqlClient;
+namespace BUS.BackEnd
 {
    public class PhanCongBUS
     {
@@ -23,7 +23,7 @@ namespace BUS
             dt = da.GetDataTable(sql);
             return dt;
         }
-        public void insertPhanCong( string mpc,string ml,string mm,string mgv,string ngay,string tiet,string phong)
+        public void insertPhanCong(string mpc, string ml, string mm, string mgv, string ngay, string tiet, string phong)
         {
             string sql = "insert PhanCong values(N'" + mpc + "',N'" + ml + "',N'" + mm + "',N'" + mgv + "',N'" + ngay + "',N'" + tiet + "',N'" + phong + "')";
             da.ExcuteNonQuerry(sql);
@@ -35,10 +35,8 @@ namespace BUS
         }
         public void updatePhanCong(string mpc, string ml, string mm, string mgv, string ngay, string tiet, string phong)
         {
-            string sql = "update PhanCong set MaLop=N'" + ml + "',MaMon = N'" + mm + "',MaGiaoVien=N'" + mgv + "',Ngay=N'" + ngay + "',TietHoc=N'" + tiet + "',PhongHoc=N'" + phong + "' where MaPhanCong =N'"+mpc+"'";
+            string sql = "update PhanCong set MaLop=N'" + ml + "',MaMon = N'" + mm + "',MaGiaoVien=N'" + mgv + "',Ngay=N'" + ngay + "',TietHoc=N'" + tiet + "',PhongHoc=N'" + phong + "' where MaPhanCong =N'" + mpc + "'";
             da.ExcuteNonQuerry(sql);
         }
-
-
     }
 }
