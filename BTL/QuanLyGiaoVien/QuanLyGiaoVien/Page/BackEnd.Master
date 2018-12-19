@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BackEnd.master.cs" Inherits="QuanLyGiaoVien.Page.BackEnd" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+      <link href="../CSS/StyleBack.css"  rel ="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 938px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+                <div id ="page">
+            <div id ="header">
+                <img src ="../Images/banner.jpg" width="960" height="auto">
+            </div>
+            <div id="menung">
+                <ul>
+                    <li><a href="GiaoVienBackEnd.aspx">Quản Lý Giáo Viên</a></li>
+                     <li><a href="MonBackEnd.aspx">Quản Lý Môn Học</a></li>
+                     <li><a href="LopBackEnd.aspx">Quản Lý Lớp</a></li>
+                     <li><a href="TinTucBackEnd.aspx">Quản Lý Tin Tức</a></li>
+                     <li><a href="LichDayBackEnd.aspx">Phân Công Giảng Dạy</a></li>
+                    <li><a href="HomeFrontEnd.aspx"> Đăng Xuất</a></li>
+                </ul>
+            </div><%--End menung --%>
+            <div id ="main" class="auto-style1">
+               
+           
+                   <div id="left"></div>
+                <div id ="content">
+            <asp:ContentPlaceHolder ID="main_backEnd" runat="server">
+               Nội dung tin ở đây
+            </asp:ContentPlaceHolder>
+                    </div>
+        
+                </div>
+
+          
+    </form>
+</body>
+</html>
