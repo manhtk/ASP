@@ -7,7 +7,7 @@
                 <asp:Label ID="Label1" runat="server" Text="Mã Giáo Viên :"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="tmagv" runat="server" Width="120px"></asp:TextBox>
+                <asp:TextBox ID="tmagv" runat="server" Width="300px" required="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -15,7 +15,7 @@
                 <asp:Label ID="sdfsdfs" runat="server" Text="Tên Giáo Viên:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="ttengv" runat="server" Width="160px"></asp:TextBox>
+                <asp:TextBox ID="ttengv" runat="server" Width="300px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -23,7 +23,7 @@
                 <asp:Label ID="dfwc" runat="server" Text="Số Điện Thoại:"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="tsdt" runat="server" Width="120px"></asp:TextBox>
+                <asp:TextBox ID="tsdt" runat="server" Width="300px" TextMode="Number"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -31,14 +31,14 @@
                 <asp:Label ID="sdfwc" runat="server" Text="Địa Chỉ"></asp:Label>
             </td>
             <td>
-                <asp:TextBox ID="tdc" runat="server" Width="160px"></asp:TextBox>
+                <asp:TextBox ID="tdc" runat="server" Width="300px"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="bthem" runat="server" OnClick="bthem_Click" Text="Thêm" Width="55px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
                 <asp:Button ID="bsua" runat="server" OnClick="bsua_Click" Text="Sửa" Width="55px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                 <asp:Button ID="bxoa" runat="server" OnClick="bxoa_Click" Text="Xóa" Width="55px" />
             </td>
         </tr>
@@ -47,7 +47,7 @@
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label5" runat="server" Font-Size="Medium" Text="Danh Sách Giáo viên "></asp:Label>
-&nbsp;<asp:GridView ID="tb1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" Height="210px" OnPageIndexChanging="tb1_PageIndexChanging" OnSelectedIndexChanged="tb1_SelectedIndexChanged" Width="527px" GridLines="Vertical">
+&nbsp;<asp:GridView ID="tb1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" Height="239px" OnPageIndexChanging="tb1_PageIndexChanging" OnSelectedIndexChanged="tb1_SelectedIndexChanged" Width="527px" GridLines="Vertical">
         <AlternatingRowStyle BackColor="#DCDCDC" />
         <Columns>
             <asp:BoundField DataField="MaGiaoVien" HeaderText="Mã Giáo Viên" />

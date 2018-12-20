@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Page/BackEnd.Master" AutoEventWireup="true" CodeBehind="MonBackEnd.aspx.cs" Inherits="QuanLyGiaoVien.Page.MonBackEnd" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Page/BackEnd.Master" AutoEventWireup="true" CodeBehind="MonBackEnd.aspx.cs" Inherits="QuanLyGiaoVien.Page.MonBackEnd"  Debug="true" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="main_backEnd" runat="server">
     <table class="auto-style2">
@@ -7,7 +7,7 @@
                 <asp:Label ID="Label1" runat="server" Text="Mã Môn"></asp:Label>
                 :</td>
             <td class="auto-style6">
-                <asp:TextBox ID="tmamon" runat="server" Width="185px"></asp:TextBox>
+                <asp:TextBox ID="tmamon" runat="server" Width="300px" required="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -15,7 +15,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Tên Môn:"></asp:Label>
             </td>
             <td class="auto-style6">
-                <asp:TextBox ID="ttenmon" runat="server" Width="181px"></asp:TextBox>
+                <asp:TextBox ID="ttenmon" runat="server" Width="300px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -23,7 +23,7 @@
                 <asp:Label ID="Label3" runat="server" Text="Số tín chỉ:"></asp:Label>
             </td>
             <td class="auto-style5">
-                <asp:TextBox ID="tsotinchi" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tsotinchi" runat="server" Width="300px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -44,7 +44,7 @@
         <asp:Label ID="Label4" runat="server" Font-Size="Medium" Text="Danh Sách Môn Học"></asp:Label>
     </p>
     <p>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" Height="261px" OnPageIndexChanging="GridView1_PageIndexChanging" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="529px" GridLines="Vertical">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" Height="276px" OnPageIndexChanging="GridView1_PageIndexChanging" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="529px" GridLines="Vertical">
             <AlternatingRowStyle BackColor="#DCDCDC" />
             <Columns>
                 <asp:BoundField DataField="MaMon" HeaderText="Mã Môn" />

@@ -70,8 +70,11 @@
   <ItemGroup>
     <Content Include="CSS\Style.css" />
     <Content Include="CSS\StyleBack.css" />
+    <Content Include="Global.asax" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\gioithieutruong.jpg" />
+    <Content Include="Images\News\t72623.jpg" />
+    <Content Include="Images\News\t72627.jpg" />
     <Content Include="Images\trangchu1.JPG" />
     <Content Include="Images\trangchu2.jpg" />
     <Content Include="Images\trangchu3.1.JPG" />
@@ -98,7 +101,9 @@
     <Content Include="Page\MonBackEnd.aspx" />
     <Content Include="Page\MonHocFrontEnd.aspx" />
     <Content Include="Page\Search.ascx" />
+    <Content Include="Page\ThongKe.ascx" />
     <Content Include="Page\TinTucBackEnd.aspx" />
+    <Content Include="Page\TinTucChiTiet.aspx" />
     <Content Include="Page\TinTucFrontEnd.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -114,6 +119,9 @@
     </Compile>
     <Compile Include="CSS\StyleBack.css.designer.cs">
       <DependentUpon>StyleBack.css.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Page\BackEnd.Master.cs">
       <DependentUpon>BackEnd.Master</DependentUpon>
@@ -262,12 +270,26 @@
     <Compile Include="Page\Search.ascx.designer.cs">
       <DependentUpon>Search.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Page\ThongKe.ascx.cs">
+      <DependentUpon>ThongKe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ThongKe.ascx.designer.cs">
+      <DependentUpon>ThongKe.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Page\TinTucBackEnd.aspx.cs">
       <DependentUpon>TinTucBackEnd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Page\TinTucBackEnd.aspx.designer.cs">
       <DependentUpon>TinTucBackEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TinTucChiTiet.aspx.cs">
+      <DependentUpon>TinTucChiTiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\TinTucChiTiet.aspx.designer.cs">
+      <DependentUpon>TinTucChiTiet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page\TinTucFrontEnd.aspx.cs">
       <DependentUpon>TinTucFrontEnd.aspx</DependentUpon>
@@ -303,6 +325,7 @@
       <Name>DTOs</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

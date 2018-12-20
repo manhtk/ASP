@@ -13,19 +13,6 @@ namespace QuanLyGiaoVien.Page
 {
     public partial class LichDayBackEnd : System.Web.UI.Page
     {
-        PhanCongDTO P = new PhanCongDTO();
-        PhanCongBUS PhanCong = new PhanCongBUS();
-        
-        public void HienThi()
-        {
-            dtgPhanCong.DataSource = PhanCong.ShowPhanCong();
-            dtgPhanCong.DataBind();
-        }
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            HienThi();
-        }
-
         protected void btnThem_Click(object sender, EventArgs e)
         {
             P.MaPhanCong = txtMaPhanCong.Text;
@@ -38,26 +25,38 @@ namespace QuanLyGiaoVien.Page
             PhanCong.insertPhanCong(P.MaPhanCong, P.MaLop, P.MaMon, P.MaGiaoVien, P.Ngay, P.TietHoc, P.PhongHoc);
             HienThi();
             xoa();
-           
-
 
         }
+        PhanCongDTO P = new PhanCongDTO();
+        PhanCongBUS PhanCong = new PhanCongBUS();
+
+        public void HienThi()
+        {
+            dtgPhanCong.DataSource = PhanCong.ShowPhanCong();
+            dtgPhanCong.DataBind();
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            HienThi();
+        }
+
+       
         private void xoa()
         {
             txtMaPhanCong.Focus();
             txtMaPhanCong.Text = "";
             txtNgay.Text = "";
             txtPhong.Text = "";
-            txtTietHoc.Text="";
+            txtTietHoc.Text = "";
 
         }
 
+
+       
+
         
 
-      
-
-
-        protected void btnSua_Click1(object sender, EventArgs e)
+        protected void btnSua_Click(object sender, EventArgs e)
         {
             P.MaPhanCong = txtMaPhanCong.Text;
             P.MaLop = DropTenlop.SelectedValue;
@@ -71,7 +70,7 @@ namespace QuanLyGiaoVien.Page
             xoa();
         }
 
-        protected void btnXoa_Click1(object sender, EventArgs e)
+        protected void btnXoa_Click(object sender, EventArgs e)
         {
             P.MaPhanCong = txtMaPhanCong.Text;
             PhanCong.detelePhanCong(P.MaPhanCong);
@@ -79,8 +78,9 @@ namespace QuanLyGiaoVien.Page
             xoa();
         }
 
-        protected void dtgPhanCong_SelectedIndexChanged1(object sender, EventArgs e)
+        protected void dtgPhanCong_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             int dong = dtgPhanCong.SelectedIndex;
             txtMaPhanCong.Text = dtgPhanCong.Rows[dong].Cells[0].Text;
             DropTenlop.SelectedItem.Text = dtgPhanCong.Rows[dong].Cells[1].Text;

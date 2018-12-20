@@ -56,5 +56,14 @@ namespace QuanLyGiaoVien.Page {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::QuanLyGiaoVien.Page.Search Search1;
+        
+        /// <summary>
+        /// ThongKe1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::QuanLyGiaoVien.Page.ThongKe ThongKe1;
     }
 }

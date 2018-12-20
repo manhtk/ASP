@@ -12,7 +12,7 @@ namespace DALs
     {
         public SqlConnection GetSqlConnection()
         {
-            return new SqlConnection(@"Data Source=ADMINIS-PC\SQLEXPRESS;Initial Catalog=QuanLyGiaoVien;Integrated Security=True");
+            return new SqlConnection(@"Data Source=DUCTHANH-PC\SQLEXPRESS;Initial Catalog=QuanLyGiaoVien;Integrated Security=True");
         }
         public DataTable GetDataTable(string sql)
         {

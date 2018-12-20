@@ -29,25 +29,32 @@ namespace QuanLyGiaoVien.Page
         {
             dto.MaMon = tmamon.Text;
             dto.TenMon = ttenmon.Text;
-            try
+            if (dto.TenMon == "")
             {
-                dto.SoTinChi = int.Parse(tsotinchi.Text);
-                if (dto.SoTinChi > 100 || dto.SoTinChi < 10)
-                    MessageBox.Show("Nhập sai số tín chỉ");
-                else
+                Response.Write("<script>alert('dữ liệu nhập vào không đươc để trống')</script>");
+            }
+            else
+            {
+                try
                 {
-                    DialogResult rs = MessageBox.Show("Thêm Môn Học?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (rs == DialogResult.Yes)
+                    dto.SoTinChi = int.Parse(tsotinchi.Text);
+                    if (dto.SoTinChi > 100 || dto.SoTinChi < 10)
+                        Response.Write("<script>alert('Nhập sai số tín chỉ')</script>");
+                    else
                     {
-                        bus.insertMonHoc(dto.MaMon, dto.TenMon, dto.SoTinChi);
-                        hienthi();
+                        DialogResult rs = MessageBox.Show("Thêm Môn Học?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (rs == DialogResult.Yes)
+                        {
+                            bus.insertMonHoc(dto.MaMon, dto.TenMon, dto.SoTinChi);
+                            hienthi();
+                        }
                     }
                 }
-            }
 
-            catch
-            {
-                MessageBox.Show("Nhập sai số tín chỉ");
+                catch
+                {
+                    Response.Write("<script>alert('Nhập sai số tín chỉ')</script>");
+                }
             }
         }
 
@@ -55,31 +62,39 @@ namespace QuanLyGiaoVien.Page
         {
             dto.MaMon = tmamon.Text;
             dto.TenMon = ttenmon.Text;
-            try
+
+            if (dto.TenMon == "")
             {
-                dto.SoTinChi = int.Parse(tsotinchi.Text);
-                if (dto.SoTinChi > 100 || dto.SoTinChi < 10)
-                    MessageBox.Show("Nhập sai số tín chỉ");
-                else
+                Response.Write("<script>alert('dữ liệu nhập vào không đươc để trống')</script>");
+            }
+            else
+            {
+                try
                 {
-                    DialogResult rs = MessageBox.Show("Sửa Môn Học?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (rs == DialogResult.Yes)
+                    dto.SoTinChi = int.Parse(tsotinchi.Text);
+                    if (dto.SoTinChi > 100 || dto.SoTinChi < 10)
+                        Response.Write("<script>alert('Nhập sai số tín chỉ')</script>");
+                    else
                     {
-                        bus.updateMonHoc(dto.MaMon, dto.TenMon, dto.SoTinChi);
-                        hienthi();
+                        DialogResult rs = MessageBox.Show("Sửa Môn Học?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (rs == DialogResult.Yes)
+                        {
+                            bus.updateMonHoc(dto.MaMon, dto.TenMon, dto.SoTinChi);
+                            hienthi();
+                        }
                     }
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Nhập sai sô tín chỉ");
+                catch
+                {
+                    Response.Write("<script>alert('Nhập sai số tín chỉ')</script>");
+                }
             }
         }
 
         protected void bxoa_Click(object sender, EventArgs e)
         {
             dto.MaMon = tmamon.Text;
-            DialogResult rs = MessageBox.Show("Xóa Môn Học?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult rs = MessageBox.Show("Xóa Môn Học?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (rs == DialogResult.Yes)
             {
                 bus.deteleMonHoc(dto.MaMon);

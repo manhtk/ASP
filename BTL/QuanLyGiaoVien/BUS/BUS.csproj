@@ -42,9 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackEnd\GiaoVienBUS.cs" />
+    <Compile Include="BackEnd\LoginBUS.cs" />
     <Compile Include="BackEnd\LopBUS.cs" />
     <Compile Include="BackEnd\MonHocBUS.cs" />
     <Compile Include="BackEnd\PhanCongBUS.cs" />
+    <Compile Include="BackEnd\ThongKeBUS.cs" />
+    <Compile Include="BackEnd\TinTucBUS.cs" />
     <Compile Include="FrontEnd\DsGiaoVienFrontEnd.cs" />
     <Compile Include="FrontEnd\DsLopFrontEnd.cs" />
     <Compile Include="FrontEnd\DsMonHocFrontEnd.cs" />

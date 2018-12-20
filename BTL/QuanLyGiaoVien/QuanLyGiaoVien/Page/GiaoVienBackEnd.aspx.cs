@@ -31,15 +31,22 @@ namespace QuanLyGiaoVien.Page
             dto.TenGiaoVien = ttengv.Text;
             dto.SoDienThoai = tsdt.Text;
             dto.DiaChi = tdc.Text;
-            if (dto.SoDienThoai.Length > 11 || dto.SoDienThoai.Length < 10)
-                MessageBox.Show("Nhập sai số điện thoại");
+            if (dto.TenGiaoVien == "" || dto.DiaChi == "")
+            {
+                Response.Write("<script>alert('dữ liệu nhập vào không đươc để trống')</script>");
+            }
             else
             {
-                DialogResult rs = MessageBox.Show("Thêm Giáo Viên?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
+                if (dto.SoDienThoai.Length > 11 || dto.SoDienThoai.Length < 10)
+                    Response.Write("<script>alert('Nhập sai số điện thoại')</script>");
+                else
                 {
-                    bus.insertGiaoVien(dto.MaGiaoVien, dto.TenGiaoVien, dto.SoDienThoai, dto.DiaChi);
-                    hienthi();
+                    DialogResult rs = MessageBox.Show("Thêm Giáo Viên?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (rs == DialogResult.Yes)
+                    {
+                        bus.insertGiaoVien(dto.MaGiaoVien, dto.TenGiaoVien, dto.SoDienThoai, dto.DiaChi);
+                        hienthi();
+                    }
                 }
             }
         }
@@ -49,16 +56,22 @@ namespace QuanLyGiaoVien.Page
             dto.MaGiaoVien = tmagv.Text;
             dto.TenGiaoVien = ttengv.Text;
             dto.SoDienThoai = tsdt.Text;
-            dto.DiaChi = tdc.Text;
-            if (dto.SoDienThoai.Length > 11 || dto.SoDienThoai.Length < 10)
-                MessageBox.Show("Nhập sai số điện thoại");
+            dto.DiaChi = tdc.Text; if (dto.TenGiaoVien == "" || dto.DiaChi == "")
+            {
+                Response.Write("<script>alert('dữ liệu nhập vào không đươc để trống')</script>");
+            }
             else
             {
-                DialogResult rs = MessageBox.Show("Sửa Giáo Viên?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
+                if (dto.SoDienThoai.Length > 11 || dto.SoDienThoai.Length < 10)
+                    Response.Write("<script>alert('Nhập sai số điện thoại')</script>");
+                else
                 {
-                    bus.updateGiaoVien(dto.MaGiaoVien, dto.TenGiaoVien, dto.SoDienThoai, dto.DiaChi);
-                    hienthi();
+                    DialogResult rs = MessageBox.Show("Sửa Giáo Viên?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (rs == DialogResult.Yes)
+                    {
+                        bus.updateGiaoVien(dto.MaGiaoVien, dto.TenGiaoVien, dto.SoDienThoai, dto.DiaChi);
+                        hienthi();
+                    }
                 }
             }
         }

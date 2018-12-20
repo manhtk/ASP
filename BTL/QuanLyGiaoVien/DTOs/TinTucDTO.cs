@@ -12,9 +12,11 @@ namespace DTOs
         {
 
         }
-        public TinTucDTO(string maTinTuc, string tieuDe, string noiDung, string hinhAnh, DateTime ngayViet)
+
+        public TinTucDTO(string maTinTuc, string tieuDe, string tomTat, string noiDung, string hinhAnh, DateTime ngayViet)
         {
             MaTinTuc = maTinTuc;
+            TomTat = tomTat;
             TieuDe = tieuDe;
             NoiDung = noiDung;
             HinhAnh = hinhAnh;
@@ -23,6 +25,7 @@ namespace DTOs
 
         public string MaTinTuc { get; set; }
         public string TieuDe { get; set; }
+        public string TomTat { get; set; }
         public string NoiDung { get; set; }
         public string HinhAnh { get; set; }
         public DateTime NgayViet { get; set; }

@@ -25,3 +25,12 @@ C:\Users\Adminis\Downloads\ASP\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.csproj
 C:\Users\Adminis\Downloads\ASP\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.csproj.CopyComplete
 C:\Users\Adminis\Downloads\ASP\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.dll
 C:\Users\Adminis\Downloads\ASP\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.pdb
+D:\ASP\BTL\QuanLyGiaoVien\DALs\bin\Debug\DALs.dll
+D:\ASP\BTL\QuanLyGiaoVien\DALs\bin\Debug\DALs.pdb
+D:\ASP\BTL\QuanLyGiaoVien\DALs\bin\Debug\DTOs.dll
+D:\ASP\BTL\QuanLyGiaoVien\DALs\bin\Debug\DTOs.pdb
+D:\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.csprojAssemblyReference.cache
+D:\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.csproj.CoreCompileInputs.cache
+D:\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.csproj.CopyComplete
+D:\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.dll
+D:\ASP\BTL\QuanLyGiaoVien\DALs\obj\Debug\DALs.pdb

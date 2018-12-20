@@ -30,26 +30,33 @@ namespace QuanLyGiaoVien.Page
             dto.MaLop = tmalop.Text;
             dto.TenLop = ttenlop.Text;
             dto.HeDaoTao = thedaotao.Text;
-            try
+            if (dto.TenLop == "" || dto.HeDaoTao == "")
             {
-                dto.SiSo = int.Parse(tsiso.Text);
-                if (dto.SiSo < 1 || dto.SiSo > 200)
+                Response.Write("<script>alert('dữ liệu nhập vào không đươc để trống')</script>");
+            }
+            else
+            {
+                try
                 {
-                    MessageBox.Show("Nhập sai sĩ số");
-                }
-                else
-                {
-                    DialogResult rs = MessageBox.Show("Thêm Lớp?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (rs == DialogResult.Yes)
+                    dto.SiSo = int.Parse(tsiso.Text);
+                    if (dto.SiSo < 1 || dto.SiSo > 200)
                     {
-                        bus.insertLop(dto.MaLop, dto.TenLop, dto.HeDaoTao, dto.SiSo);
-                        hienthi();
+                        Response.Write("<script>alert('Nhập sai sĩ số')</script>");
+                    }
+                    else
+                    {
+                        DialogResult rs = MessageBox.Show("Thêm Lớp?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (rs == DialogResult.Yes)
+                        {
+                            bus.insertLop(dto.MaLop, dto.TenLop, dto.HeDaoTao, dto.SiSo);
+                            hienthi();
+                        }
                     }
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Nhập sai sĩ số","Message");
+                catch
+                {
+                    Response.Write("<script>alert('Nhập sai sĩ số')</script>");
+                }
             }
         }
 
@@ -58,33 +65,41 @@ namespace QuanLyGiaoVien.Page
             dto.MaLop = tmalop.Text;
             dto.TenLop = ttenlop.Text;
             dto.HeDaoTao = thedaotao.Text;
-            try
+
+            if (dto.TenLop == "" || dto.HeDaoTao == "")
             {
-                dto.SiSo = int.Parse(tsiso.Text);
-                if (dto.SiSo < 1 || dto.SiSo > 200)
+                Response.Write("<script>alert('dữ liệu nhập vào không đươc để trống')</script>");
+            }
+            else
+            {
+                try
                 {
-                    MessageBox.Show("Nhập sai sĩ số");
-                }
-                else
-                {
-                    DialogResult rs = MessageBox.Show("Sửa Lớp?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (rs == DialogResult.Yes)
+                    dto.SiSo = int.Parse(tsiso.Text);
+                    if (dto.SiSo < 1 || dto.SiSo > 200)
                     {
-                        bus.updateLop(dto.MaLop, dto.TenLop, dto.HeDaoTao, dto.SiSo);
-                        hienthi();
+                        Response.Write("<script>alert('Nhập sai sĩ số')</script>");
+                    }
+                    else
+                    {
+                        DialogResult rs = MessageBox.Show("Sửa Lớp?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (rs == DialogResult.Yes)
+                        {
+                            bus.updateLop(dto.MaLop, dto.TenLop, dto.HeDaoTao, dto.SiSo);
+                            hienthi();
+                        }
                     }
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Nhập sai sĩ số");
+                catch
+                {
+                    Response.Write("<script>alert('Nhập sai sĩ số')</script>");
+                }
             }
         }
 
         protected void bxoa_Click(object sender, EventArgs e)
         {
             dto.MaLop = tmalop.Text;
-            DialogResult rs = MessageBox.Show("Xóa Lớp?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult rs = MessageBox.Show("Xóa Lớp?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (rs == DialogResult.Yes)
             {
                 bus.deteleLop(dto.MaLop);

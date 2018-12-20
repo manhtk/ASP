@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using DALs;
 using DTOs;
 using System.Data;
-using System.Data.SqlClient;
+
 namespace BUS.BackEnd
 {
    public class PhanCongBUS
     {
+
         Data da = new Data();
         PhanCongDTO P = new PhanCongDTO();
         public DataTable ShowPhanCong()

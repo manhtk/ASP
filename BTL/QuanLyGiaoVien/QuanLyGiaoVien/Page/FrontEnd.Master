@@ -4,6 +4,8 @@
 
 <%@ Register src="Search.ascx" tagname="Search" tagprefix="uc2" %>
 
+<%@ Register src="ThongKe.ascx" tagname="ThongKe" tagprefix="uc3" %>
+
 
 
 
@@ -74,10 +76,12 @@
 
                         <uc2:Search ID="Search1" runat="server" />
 
-                       
+          
 
-                   
-                       
+                    </div><br /><br />
+                    <div id="ThongKe">
+
+                        <uc3:ThongKe ID="ThongKe1" runat="server" />
 
                     </div>
                 </div>
@@ -87,7 +91,7 @@
          &copy; Copyright : 12/2018<br />
          
       </p>
-      <p>Nhóm 3 CNTT3-10<br />
+      <p>Nhóm 4 CNTT3-10<br />
          Khoa CNTT - ĐHCN Hà Nội
       </p>         
     </div> <%--End Footer--%>
